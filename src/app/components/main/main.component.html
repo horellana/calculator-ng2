@@ -1,0 +1,13 @@
+
+<div *ngFor="let input of inputs">
+  <label>
+    {{input.name}}
+  </label>
+  <input [(ngModel)]="input.value" (keyup)="onInput()" type="numeric"  size="1">
+</div>
+
+<label>
+  Result:
+</label>
+
+{{c}}
