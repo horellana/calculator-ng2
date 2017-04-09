@@ -1,3 +1,21 @@
 <h1>
-  {{title}}
+  <label>
+    a
+  </label>
+  <input [(ngModel)]="a" (keyup)="onKey($event)" type="numeric"  size="1">
+
+<br>
+
+<label>
+    b
+  </label>
+  <input [(ngModel)]="b" (keyup)="onKey($event)" type="numeric"  size="1">
 </h1>
+
+<br>
+
+<label>
+  Result:
+</label>
+
+{{c}}
